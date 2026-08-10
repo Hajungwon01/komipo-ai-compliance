@@ -28,7 +28,7 @@
 
 ## 데모
 
-**Live Demo**: [komipo-ai-compliance-production.up.railway.app]
+**Live Demo**: [Live Demo](https://komipo-ai-compliance-production.up.railway.app)
 로컬에서 직접 실행해 확인할 수도 있습니다(아래 [실행 가이드](#실행-가이드) 참고). 화면 흐름은 다음과 같습니다.
 
 | 단계 | 화면 | 내용 |

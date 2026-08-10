@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 환경변수 (API 키 — 절대 커밋하지 말 것)
+.env
+
+# SQLite DB 파일 (로컬/배포 환경마다 새로 만들어짐 — sample_data.sql·refresh 스크립트로 채움)
+*.db
+*.db-journal
+
+# OS
+.DS_Store
+Thumbs.db

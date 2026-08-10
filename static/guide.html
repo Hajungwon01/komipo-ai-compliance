@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 컴플라이언스 시뮬레이터 - 가이드</title>
+<link rel="stylesheet" href="/app/css/style.css" />
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">
+    <svg class="icon emoji" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10l4 3V10l4 3V10l4 3v8"/><path d="M17 21V7l3 2v12"/><path d="M9 21v-4h2v4"/></svg>
+    AI 컴플라이언스 시뮬레이터
+  </div>
+  <div class="user-box">
+    <span class="plant-chip" id="plant-chip">불러오는 중...</span>
+    <span id="username-label"></span>
+    <button class="btn btn-ghost" id="logout-btn">로그아웃</button>
+  </div>
+</div>
+
+<div class="page-shell">
+  <div class="hero">
+    <h1>서비스 안내</h1>
+    <p class="subtitle">발전소 인허가 서류를 법령 기준과 자동 대조하는 대화형 사전 검토 도우미 (MVP 데모)</p>
+  </div>
+
+  <p class="lead-text">
+    발전소 건설·정비 시 제출하는 인허가서류·환경영향평가서·안전계획서는 수백 페이지 규모이고,
+    대기환경보전법·물환경보전법·중대재해처벌법 등 관련 법령이 수시로 개정됩니다.
+    이 서비스는 서류를 업로드하면 등록된 법령·실제 허가기준과 자동으로 대조해 위반 위험과
+    누락 항목을 사전에 찾아드립니다.
+  </p>
+
+  <div class="card-grid">
+    <div class="info-card">
+      <h3>① 규칙 기반 수치 대조</h3>
+      <p>배출허용치처럼 숫자로 딱 떨어지는 기준(먼지·질소산화물·황산화물·BOD 등)은 규칙 엔진으로 정확하게 대조합니다 (AI 환각 위험 배제).</p>
+    </div>
+    <div class="info-card">
+      <h3>② AI 보조 필수 항목 점검</h3>
+      <p>중대재해처벌법 안전관리체계처럼 문맥 판단이 필요한 항목은 AI가 서류에 실제로 포함돼 있는지 확인합니다.</p>
+    </div>
+  </div>
+
+  <p class="lead-text" style="margin-top: 20px;">
+    검토 결과가 나온 뒤에는 채팅으로 "왜 위반이야?", "어떻게 고치면 돼?" 같은 후속 질문도 할 수 있어요.
+    현재 <strong id="plant-inline">-</strong> 소속으로 로그인돼 있어, 해당 발전소 기준(+ BOD·중대재해처벌법처럼
+    발전소 공통 기준)으로 서류를 대조합니다.
+  </p>
+
+  <div class="alert alert-warn">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+    <span>이 결과는 참고용 사전 검토이며, 최종 판단은 담당자가 내려야 합니다.</span>
+  </div>
+
+  <div class="cta-row">
+    <button class="btn btn-primary" id="start-btn">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+      문서 업로드하고 검토 시작하기
+    </button>
+  </div>
+</div>
+
+<script src="/app/js/guide.js"></script>
+</body>
+</html>
